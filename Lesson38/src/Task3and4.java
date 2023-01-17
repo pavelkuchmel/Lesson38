@@ -70,7 +70,7 @@ public class Task3and4 {
 
         System.out.println(new GregorianCalendar().getTime());
         System.out.println("Cars of now year: ");
-        cars.stream().filter(x -> x.getYear() == new GregorianCalendar().getTime()).forEach(x -> System.out.println(x.toString() + "\n"));
+        cars.stream().filter(x -> x.getYear() == new GregorianCalendar().get(Calendar.YEAR)).forEach(x -> System.out.println(x.toString() + "\n"));
 
     }
 
